@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__top">
+          <div class="page-header__inner">
+            <div class="page-header__content">
+              <a class="main-nav__toggler  burger" href="#mobile-menu"><span></span></a>
+
+              <a href="index.html" class="logo page-header__logo">
+                <span class="logo__image">
+                  <img src="img/logo.png" alt="лого">
+                </span>
+                <span class="logo__caption">Автоматика для систем <br>водоснабжения <hr> управляем потоками</span>
+              </a>
+
+              <div class="header-info">
+                <div class="header-info__item">
+                  <div class="header-info__call">
+                    <div class="header-info__phone-num">8 800 222 13 92</div>
+                    <div>Бесплатно по России</div>
+                  </div>
+                </div>
+                <div class="header-info__item">
+                  <div class="header-info__email">
+                    <a href="mailto:ol-aqua@yandex.ru"><span>ol-aqua@yandex.ru</span></a>
+                  </div>
+                </div>
+                <div class="header-info__item">
+                  <div class="header-info__addr">
+                    <a href="#"><span>Москва, Алтуфьевское шоссе, д.37, стр.1</span></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="page-header__nav">
+          <div class="page-header__inner">
+            <nav class="main-nav" role="navigation">
+              <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="page-catalog.html" class="main-nav__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--active">
+                  <a href="" class="main-nav__link">
+                    Информация
+                  </a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                          Сертификаты
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                          Для скачивания
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-video.html" class="main-nav__link">
+                    Видео
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    Примеры монтажа
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-contacts.html" class="main-nav__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <form class="search-form  page-header__search">
+              <input class="search-form__input" type="search" placeholder="">
+              <button class="search-form__btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main" class="main">
+
+        <div class="layout-page layout-page--contacts">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <section class="main-section main-section--contacts">
+          <div class="main-contacts">
+            <div class="main-contacts__col main-contacts__col--content">
+              <div class="main-contacts__content">
+                <h2 class="main-contacts__title">Контакты</h2>
+                <ul class="main-contacts__list">
+                  <li><a href="#">Москва, Алтуфьевское шоссе, д.37, стр.1</a></li>
+                  <li><a href="#">ol-aqua@yandex.ru</a></li>
+                  <li><a href="#"></a>+7 495 744 67 21; 8 800 222 13 92</li>
+                </ul>
+                <hr>
+                <div class="main-contacts__feedback">
+                  <p>Не можете подобрать оборудование самостоятельно?<br>
+                  Оставьте заявку и мы поможем вам!</p>
+                  <a class="btn btn--red" href="#">заказать звонок</a>
+                </div>
+              </div>
+            </div>
+            <div class="main-contacts__col main-contacts__col--map">
+              <img src="img/map-placeholder.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__top">
+          <div class="page-footer__inner">
+            <div class="page-footer__content">
+              <div class="footer-logo">
+                <a href="index.html" class="logo">
+                  <span class="logo__image">
+                    <img src="img/logo.png" alt="лого">
+                  </span>
+                  <span class="logo__caption">Автоматика для систем <br>водоснабжения</span>
+                </a>
+              </div>
+              <div class="footer-info">
+                <div class="footer-contacts">
+                  <div class="footer-contacts__item">
+                    <div class="header-info__call">
+                      <div>8 800 222 13 92</div>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="header-info__email">
+                      <a href="mailto:ol-aqua@yandex.ru"><span>ol-aqua@yandex.ru</span></a>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="header-info__addr">
+                      <a href="#"><span>Москва, Алтуфьевское шоссе, д.37, стр.1</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Примеры монтажа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__inner">
+            <div class="copyrights">
+              <div class="copyrights__item">
+                <span>© ОЛ-Аква 2018 </span>
+              </div>
+              <div class="copyrights__item">
+                <span>Разработка - <a href="#">Showbiz interactive</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <nav id="mobile-menu">
+    <ul>
+      <li><span>Каталог</span>
+        <ul>
+          <li><a href="#about/history">Пункт меню</a></li>
+          <li><span>Пункт меню</span>
+            <ul>
+              <li><a href="#about/team/management">Пункт меню</a></li>
+              <li><a href="#about/team/sales">Пункт меню</a></li>
+              <li><a href="#about/team/development">Пункт меню</a></li>
+            </ul>
+          </li>
+          <li><a href="page-account.html">Пункт меню</a></li>
+          <li><a href="#about/address">Пункт меню</a></li>
+        </ul>
+      </li>
+      <li><a href="page-account.html">Пункт меню</a></li>
+      <li><a href="#about/address">Пункт меню</a></li>
+      <li><a href="page-account.html">Пункт меню</a></li>
+      <li><a href="#about/address">Пункт меню</a></li>
+      <li><a href="#contact">Пункт меню</a></li>
+    </ul>
+  </nav>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
