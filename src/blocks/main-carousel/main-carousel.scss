@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока main-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 0 60px;
+
+  .owl-dots {
+    display: none;
+  }
+
+  &.owl-carousel .owl-nav .owl-prev {
+    left: -30px;
+  }
+
+  &.owl-carousel .owl-nav .owl-next {
+    right: -30px;
+  }
+
+  &__caption {
+    color: #10225d;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+}

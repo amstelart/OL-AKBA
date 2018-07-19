@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main" class="main">
+
+        <div class="layout-page layout-page--contacts">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <section class="main-section main-section--contacts">
+          <div class="main-contacts">
+            <div class="main-contacts__col main-contacts__col--content">
+              <div class="main-contacts__content">
+                <h2 class="main-contacts__title">Контакты</h2>
+                <ul class="main-contacts__list">
+                  <li><a href="#">Москва, Алтуфьевское шоссе, д.37, стр.1</a></li>
+                  <li><a href="#">ol-aqua@yandex.ru</a></li>
+                  <li><a href="#"></a>+7 495 744 67 21; 8 800 222 13 92</li>
+                </ul>
+                <hr>
+                <div class="main-contacts__feedback">
+                  <p>Не можете подобрать оборудование самостоятельно?<br>
+                  Оставьте заявку и мы поможем вам!</p>
+                  <a class="btn btn--red" href="#">заказать звонок</a>
+                </div>
+              </div>
+            </div>
+            <div class="main-contacts__col main-contacts__col--map">
+              <img src="img/map-placeholder.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mobile-menu/mobile-menu.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

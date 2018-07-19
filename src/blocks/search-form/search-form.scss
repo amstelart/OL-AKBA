@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока search-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.search-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 0;
+  padding: 0;
+  height: 35px;
+
+  &__input {
+    margin: 0;
+    padding: 0 18px 0 40px;
+    border: 0;
+    background: none;
+    height: 100%;
+    width: 220px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #223d94;
+    border-radius: 35px;
+    background-image: svg-load('../blocks/search-form/bg-img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+
+    &::placeholder {
+      color: rgba(#fff, .7);
+      opacity: 1;
+    }
+
+    &[type='search']::-webkit-search-cancel-button,
+    &[type='search']::-webkit-search-decoration {
+      -webkit-appearance: none; /* stylelint-disable-line  property-no-vendor-prefix */
+    }
+  }
+
+  &__btn {
+    display: none;
+  }
+}
