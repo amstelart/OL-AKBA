@@ -185,7 +185,7 @@
                 <div class="main-contacts__feedback">
                   <p>Не можете подобрать оборудование самостоятельно?<br>
                   Оставьте заявку и мы поможем вам!</p>
-                  <a class="btn btn--red" href="#">заказать звонок</a>
+                  <a class="btn btn--red" href="#modal-call" data-toggle="modal">заказать звонок</a>
                 </div>
               </div>
             </div>
@@ -292,6 +292,45 @@
       <li><a href="#contact">Пункт меню</a></li>
     </ul>
   </nav>
+
+  <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заказать звонок</h4>
+          <p class="modal__caption">Наши менеджеры перезвонят вам<br> и ответят на все вопросы</p>
+          <div class="separate"></div>
+        </div>
+        <div class="modal__body">
+          <form action="" class="form">
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--red">Оставить заявку</button>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text">Я принимаю</span>
+                <a href="#">условия передачи информации</a>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.min.js"></script>
 
 </body>
