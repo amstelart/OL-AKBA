@@ -15,21 +15,26 @@ $text-color:                  hsl(0, 0%, 10%) !default;
   list-style: none;
   margin: $line-height 0;
 
+  // @media (max-width: $screen-xl) {
+  //   margin: 0;
+  // }
+
   &__item {
     display: inline-block;
-    margin-right: 0.6em;
+    margin-right: 0.2em;
     white-space: nowrap;
+    color: #10225d;
 
     &:not(:last-child):after {
-      content: '>';
+      content: '—';
       display: inline-block;
-      margin-left: 0.8em;
-      color: $gray;
+      margin-left: 0.4em;
+      color: #9da3b3;
     }
   }
 
   &__link {
-    color: $text-color;
+    color: #9da3b3;
     text-decoration: none;
 
     &:hover,

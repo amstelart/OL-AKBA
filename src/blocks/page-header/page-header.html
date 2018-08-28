@@ -10,7 +10,6 @@
   <div class="page-header__top">
     <div class="page-header__inner">
       <div class="page-header__content">
-        <a class="main-nav__toggler  burger" href="#mobile-menu"><span></span></a>
 
         <a href="index.html" class="logo page-header__logo">
           <span class="logo__image">
@@ -28,12 +27,22 @@
           </div>
           <div class="header-info__item">
             <div class="header-info__email">
-              <a href="mailto:ol-aqua@yandex.ru"><span>ol-aqua@yandex.ru</span></a>
+              <a href="mailto:ol-aqua@yandex.ru">
+                <svg class="header-info__icon" width="15" height="15">
+                  <use xlink:href="img/sprite-svg.svg#icon-mail"></use>
+                </svg>
+                ol-aqua@yandex.ru
+              </a>
             </div>
           </div>
           <div class="header-info__item">
             <div class="header-info__addr">
-              <a href="#"><span>Москва, Алтуфьевское шоссе, д.37, стр.1</span></a>
+              <a href="#">
+                <svg class="header-info__icon" width="15" height="15">
+                  <use xlink:href="img/sprite-svg.svg#icon-map"></use>
+                </svg>
+                Москва, Алтуфьевское шоссе, д.37, стр.1
+              </a>
             </div>
           </div>
         </div>
@@ -43,6 +52,7 @@
   </div>
   <div class="page-header__nav">
     <div class="page-header__inner">
+      <a class="main-nav__toggler  burger" href="#mobile-menu"><span></span></a>
       <nav class="main-nav" role="navigation">
         <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
         <ul class="main-nav__list">
@@ -51,7 +61,7 @@
               Каталог
             </a>
           </li>
-          <li class="main-nav__item  main-nav__item--active">
+          <li class="main-nav__item">
             <a href="" class="main-nav__link">
               Информация
             </a>
@@ -70,7 +80,7 @@
               </ul>
             </div>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="page-video.html" class="main-nav__link">
               Видео
             </a>

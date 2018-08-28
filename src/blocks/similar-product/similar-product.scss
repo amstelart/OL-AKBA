@@ -1,9 +1,20 @@
-// В этом файле должны быть стили для БЭМ-блока similar-product, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока similar-product, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .similar-product {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__cards {
+    @include row;
+
+    .product-card {
+      @include col();
+      @include col(md, 4);
+      @include col(sm, 6);
+      margin-bottom: 30px
+    }
+  }
 
 }

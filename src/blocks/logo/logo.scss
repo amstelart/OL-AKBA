@@ -29,4 +29,14 @@
       border-top: 1px solid #bdc6e1;
     }
   }
+
+  @media (max-width: ($screen-sm - 1)) {
+
+    margin-bottom: 15px;
+
+    &__caption {
+      font-size: 12px;
+      padding: 10px 15px;
+    }
+  }
 }

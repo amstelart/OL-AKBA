@@ -1,0 +1,45 @@
+// В этом файле должны быть стили для БЭМ-блока bownload-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.bownload-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 40px;
+
+  &__title {
+    color: #304a9e;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.3em;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    a {
+      color: #0c173e;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: #304a9e;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      color: #8d919f;
+      padding: 0 0.3em;
+    }
+  }
+
+}

@@ -20,8 +20,8 @@
 
         <div class="layout-page layout-page--contacts">
           <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Контакты</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item">Контакты</li>
           </ul>
         </div>
 
@@ -31,20 +31,35 @@
               <div class="main-contacts__content">
                 <h2 class="main-contacts__title">Контакты</h2>
                 <ul class="main-contacts__list">
-                  <li><a href="#">Москва, Алтуфьевское шоссе, д.37, стр.1</a></li>
-                  <li><a href="#">ol-aqua@yandex.ru</a></li>
-                  <li><a href="#"></a>+7 495 744 67 21; 8 800 222 13 92</li>
+                  <li>
+                      <svg class="main-contacts__icon" width="20" height="20">
+                        <use xlink:href="img/sprite-svg.svg#icon-map"></use>
+                      </svg>
+                      Москва, Алтуфьевское шоссе, д.37, стр.1
+                  </li>
+                  <li>
+                      <svg class="main-contacts__icon" width="20" height="20">
+                        <use xlink:href="img/sprite-svg.svg#icon-mail"></use>
+                      </svg>
+                      ol-aqua@yandex.ru
+                  </li>
+                  <li>
+                    <svg class="main-contacts__icon" width="20" height="20">
+                      <use xlink:href="img/sprite-svg.svg#icon-phone"></use>
+                    </svg>
+                    +7 495 744 67 21; 8 800 222 13 92
+                  </li>
                 </ul>
                 <hr>
                 <div class="main-contacts__feedback">
                   <p>Не можете подобрать оборудование самостоятельно?<br>
                   Оставьте заявку и мы поможем вам!</p>
-                  <a class="btn btn--red" href="#">заказать звонок</a>
+                  <a class="btn btn--red" href="#modal-call" data-toggle="modal">заказать звонок</a>
                 </div>
               </div>
             </div>
             <div class="main-contacts__col main-contacts__col--map">
-              <img src="img/map-placeholder.jpg" alt="">
+              <img class="map-image" src="img/map-placeholder.jpg" alt="">
             </div>
           </div>
         </section>
@@ -60,6 +75,8 @@
   </div>
 
   @@include('blocks/mobile-menu/mobile-menu.html')
+
+  @@include('blocks/modal/modal.html')
 
   @@include('_include/page_bottom.html')
 </body>

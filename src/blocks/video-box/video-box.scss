@@ -18,6 +18,10 @@
     h5 {
       margin: 0;
     }
+
+    @media (max-width: ($screen-md - 1)) {
+      padding: 0.7em 1em;
+    }
   }
 
 }

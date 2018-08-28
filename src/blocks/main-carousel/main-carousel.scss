@@ -6,18 +6,36 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  margin: 0 60px;
+  padding: 0 60px;
+
+  @media (max-width: $screen-lg) {
+    padding: 0;
+  }
+
+  .owl-stage-outer {
+    // padding: 0 60px;
+  }
+
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+
+      svg {
+        stroke: #304a9e;
+      }
+    }
+  }
 
   .owl-dots {
     display: none;
   }
 
   &.owl-carousel .owl-nav .owl-prev {
-    left: -30px;
+    margin-top: -15px;
   }
 
   &.owl-carousel .owl-nav .owl-next {
-    right: -30px;
+    margin-top: -15px;
   }
 
   &__caption {

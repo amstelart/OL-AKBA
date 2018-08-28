@@ -1,0 +1,97 @@
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+
+  &__item {
+    position: relative;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(5, 12, 34, 0.6);
+    }
+  }
+
+  &__item-inner {
+    @include container;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__caption {
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #a1a3aa;
+    margin-bottom: 1.3em;
+  }
+
+  .owl-nav {
+
+    .owl-prev {
+      left: 20px;
+    }
+
+    .owl-next {
+      right: 20px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__caption {
+      text-align: left;
+      padding: 60px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__item {
+      height: 480px;
+      background-size: auto;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+    &__item {
+      height: 600px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+
+}

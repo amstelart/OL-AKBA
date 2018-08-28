@@ -16,18 +16,19 @@ $border-color:                hsl(0, 0%, 60%) !default;
   flex-wrap: wrap;
   margin-top: $line-height;
   margin-bottom: $line-height;
+  justify-content: center;
 
   &__item {
     display: block;
-    padding: 0.5em;
-    min-width: 2.5em;
-    border: 1px solid $border-color;
+    padding: 0.4em 0.2em;
+    min-width: 2em;
     text-decoration: none;
     text-align: center;
     color: $text-color;
 
     & + & {
       border-left: 0;
+      margin-left: 10px;
     }
 
     &:hover,
@@ -40,12 +41,21 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
       &:hover,
       &:focus {
-        background-color: $gray-lightest;
+        color: #ee2430;
+
+        #{$block-name}__icon {
+          stroke: #ee2430;
+        }
       }
     }
 
     &--active {
-      background-color: $gray-lightest;
+      background-color: #ee2430;
+      color: #fff;
     }
+  }
+
+  &__icon {
+    stroke: #304a9e;
   }
 }

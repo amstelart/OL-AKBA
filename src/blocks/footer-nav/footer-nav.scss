@@ -8,6 +8,10 @@
 
   max-width: 400px;
 
+  @media (max-width: ($screen-sm - 1)) {
+    max-width: auto;
+  }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -16,6 +20,10 @@
     font-weight: 700;
     column-count: 2;
     column-width: 100px;
+
+    @media (max-width: ($screen-sm - 1)) {
+      column-count: 1;
+    }
 
     li {
       margin-bottom: 20px;

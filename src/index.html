@@ -20,10 +20,42 @@
 
         <section class="main-section main-section--slider">
           <div class="owl-carousel main-slider">
-            <img src="img/main-slider-image-01.jpg" alt="">
-            <img src="img/main-slider-image-01.jpg" alt="">
-            <img src="img/main-slider-image-01.jpg" alt="">
-            <img src="img/main-slider-image-01.jpg" alt="">
+            <div class="main-slider__item" style="background-image: url('img/main-slider-image-01.jpg');">
+              <div class="main-slider__item-inner">
+                <div class="main-slider__caption">
+                  <h2 class="main-slider__title">Насосные станции</h2>
+                  <p class="main-slider__text">Скидки до 30% на популярные товары</p>
+                  <a class="btn btn--red" href="#">перейти в раздел</a>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__item" style="background-image: url('img/main-slider-image-01.jpg');">
+              <div class="main-slider__item-inner">
+                <div class="main-slider__caption">
+                  <h2 class="main-slider__title">Насосные станции</h2>
+                  <p class="main-slider__text">Скидки до 30% на популярные товары</p>
+                  <a class="btn btn--red" href="#">перейти в раздел</a>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__item" style="background-image: url('img/main-slider-image-01.jpg');">
+              <div class="main-slider__item-inner">
+                <div class="main-slider__caption">
+                  <h2 class="main-slider__title">Насосные станции</h2>
+                  <p class="main-slider__text">Скидки до 30% на популярные товары</p>
+                  <a class="btn btn--red" href="#">перейти в раздел</a>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__item" style="background-image: url('img/main-slider-image-01.jpg');">
+              <div class="main-slider__item-inner">
+                <div class="main-slider__caption">
+                  <h2 class="main-slider__title">Насосные станции</h2>
+                  <p class="main-slider__text">Скидки до 30% на популярные товары</p>
+                  <a class="btn btn--red" href="#">перейти в раздел</a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="main-section main-section--catalog">
@@ -113,7 +145,9 @@
             <div class="owl-carousel main-carousel">
               <div class="main-carousel__card">
                 <div class="main-carousel__image">
-                  <img src="img/main-carousel-image-01.jpg" alt="">
+                  <a href="#">
+                    <img src="img/main-carousel-image-01.jpg" alt="">
+                  </a>
                 </div>
                 <div class="main-carousel__caption">Частный дом на улице Елецкой</div>
               </div>
@@ -145,20 +179,35 @@
               <div class="main-contacts__content">
                 <h2 class="main-contacts__title">Контакты</h2>
                 <ul class="main-contacts__list">
-                  <li><a href="#">Москва, Алтуфьевское шоссе, д.37, стр.1</a></li>
-                  <li><a href="#">ol-aqua@yandex.ru</a></li>
-                  <li><a href="#"></a>+7 495 744 67 21; 8 800 222 13 92</li>
+                  <li>
+                      <svg class="main-contacts__icon" width="20" height="20">
+                        <use xlink:href="img/sprite-svg.svg#icon-map"></use>
+                      </svg>
+                      Москва, Алтуфьевское шоссе, д.37, стр.1
+                  </li>
+                  <li>
+                      <svg class="main-contacts__icon" width="20" height="20">
+                        <use xlink:href="img/sprite-svg.svg#icon-mail"></use>
+                      </svg>
+                      ol-aqua@yandex.ru
+                  </li>
+                  <li>
+                    <svg class="main-contacts__icon" width="20" height="20">
+                      <use xlink:href="img/sprite-svg.svg#icon-phone"></use>
+                    </svg>
+                    +7 495 744 67 21; 8 800 222 13 92
+                  </li>
                 </ul>
                 <hr>
                 <div class="main-contacts__feedback">
                   <p>Не можете подобрать оборудование самостоятельно?<br>
                   Оставьте заявку и мы поможем вам!</p>
-                  <a class="btn btn--red" href="#">заказать звонок</a>
+                  <a class="btn btn--red" href="#modal-call" data-toggle="modal">заказать звонок</a>
                 </div>
               </div>
             </div>
             <div class="main-contacts__col main-contacts__col--map">
-              <img src="img/map-placeholder.jpg" alt="">
+              <img class="map-image" src="img/map-placeholder.jpg" alt="">
             </div>
           </div>
         </section>
@@ -174,6 +223,8 @@
   </div>
 
   @@include('blocks/mobile-menu/mobile-menu.html')
+
+  @@include('blocks/modal/modal.html')
 
   @@include('_include/page_bottom.html')
 </body>

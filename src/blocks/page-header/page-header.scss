@@ -6,6 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (max-width: ($screen-xl - 1)) {
+    padding-top: 50px;
+  }
+
   &__inner {
     @include container;
   }
@@ -17,6 +21,19 @@
   &__nav {
     background: #2c4fc0;
 
+    @media (max-width: ($screen-xl - 1)) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+
+      #{$block-name}__inner {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
     #{$block-name}__inner {
       display: flex;
       justify-content: space-between;
@@ -26,6 +43,10 @@
 
   &__content {
     display: flex;
+
+    @media (max-width: ($screen-xl - 1)) {
+      flex-wrap: wrap;
+    }
   }
 
   &__logo {

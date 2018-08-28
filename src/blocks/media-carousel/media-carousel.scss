@@ -1,0 +1,92 @@
+// В этом файле должны быть стили для БЭМ-блока media-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.media-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 300px;
+
+}
+
+#sync1 {
+
+  margin-bottom: 30px;
+
+  .item {
+    background: #fff;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+
+    img {
+      // object-fit: contain;
+      // width: 100%;
+      // height: 100%;
+      display: inline-block;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+#sync2 {
+  .item {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccd3eb;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .current .item{
+    border-color: #0c83e7;
+  }
+}
+
+
+
+.owl-theme {
+  .owl-nav {
+    /*default owl-theme theme reset .disabled:hover links */
+    [class*='owl-'] {
+      transition: all .3s ease;
+      &.disabled:hover {
+       background-color: #D6D6D6;
+      }
+    }
+
+  }
+}
+
+//arrows on first carousel
+#sync2 {
+  position: relative;
+  padding: 0 40px;
+
+  .owl-next, .owl-prev {
+    width: 15px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
+}

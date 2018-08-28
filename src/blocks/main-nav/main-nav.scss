@@ -24,6 +24,10 @@ $transition-time:             0.3s !default;
   position: relative;
   z-index: 10;
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    display: none;
+  }
+
   // первый уровень
   &__list {
     font-size: 15px;
@@ -99,6 +103,8 @@ $transition-time:             0.3s !default;
 
   &__sublist-wrapper {
 
+    background: #eff3ff;
+
     &--lvl-2 {
 
       @media (min-width: $menu-desktop-width) {
@@ -116,7 +122,26 @@ $transition-time:             0.3s !default;
         #{$block-name}__item:hover & {
           opacity: 1;
           height: auto;
+          display: block;
           overflow: visible;
+        }
+
+        #{$block-name}__item {
+          flex-grow: 1;
+        }
+
+        #{$block-name}__link {
+          color: #0c173e;
+          font-weight: 700;
+          white-space: nowrap;
+          display: block;
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: #fff;
+            background-color: darken(#2c4fc0, 15%);
+          }
         }
         // stylelint-enable
       }
@@ -155,6 +180,8 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
+    flex-shrink: 0;
+    margin-right: 20px;
 
     .no-js & {
       display: none;

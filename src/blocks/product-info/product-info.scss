@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока product-info, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-info {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__table {
+
+    caption {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    th {
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    font-size: 12px;
+  }
+
+}
