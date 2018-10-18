@@ -6,7 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @media (max-width: ($screen-xl - 1)) {
+  @media (max-width: ($screen-lg - 1)) {
     padding-top: 50px;
   }
 
@@ -21,7 +21,7 @@
   &__nav {
     background: #2c4fc0;
 
-    @media (max-width: ($screen-xl - 1)) {
+    @media (max-width: ($screen-lg - 1)) {
       position: absolute;
       top: 0;
       left: 0;
