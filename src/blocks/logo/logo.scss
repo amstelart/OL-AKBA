@@ -13,6 +13,11 @@
 
   &__image {
     flex-shrink: 0;
+
+    @media (max-width: $screen-sm) {
+      max-width: 100px;
+      flex-basis: 100px;
+    }
   }
 
   &__caption {

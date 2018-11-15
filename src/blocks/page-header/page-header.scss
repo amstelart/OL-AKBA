@@ -52,5 +52,9 @@
   &__logo {
     margin-right: 30px;
     flex-shrink: 0;
+
+    .logo__caption {
+      color: #3a3c42;
+    }
   }
 }

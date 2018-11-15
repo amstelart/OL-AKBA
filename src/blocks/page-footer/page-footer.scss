@@ -28,6 +28,10 @@
     .footer-logo {
       @include col();
       @include col(lg, 5);
+
+      .logo__caption {
+        color: #fff;
+      }
     }
     .footer-info {
       @include col();
